@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<style>
+    #left{
+        float: left;
+    width: 50%;
+    overflow: hidden;
+    }
+    #right{
+        float: left;
+    width: 50%;
+    overflow: hidden;
+    margin-top: 25%;   
+     }
+     label{
+         margin-top: 1.2rem;
+     }
+     button{
+         display:block;
+         margin-top: 1rem;
+     }
+     input{
+         height:1.2rem;
+        
+     }
+</style>
+<body>
+    <div id='left'>
+        <canvas class='canvas' width='800' height='800'></canvas>
+    </div>
+    <div id='right'>
+        <label for="">Hour:</label>
+        <input type="text" id='hour'>
+        <label for="">Minutes:</label>
+        <input type="text" id='min'>
+        <label for="">Seconds:</label>
+        <input type="text" id='sec'>
+        <button id='submitbut'>OK</button>
+    </div>
+</body>
+<script src="clock.js"></script>
+<script src="draw.js"></script>
+</html>
